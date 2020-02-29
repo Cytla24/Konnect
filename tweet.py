@@ -15,11 +15,10 @@ class TwitterScrapper:
         # csvFile.truncate()
         # csvWriter = csv.writer(csvFile)
         
-        keywords = Business.query.filter_by(id=biz_id).keywords.split(",  ")
+        keyword = Business.query.filter_by(id=biz_id).keywords
         
-        for keyword in keywords:
-            for tweet in tweepy.Cursor(self.api.search, q=keyword, count=100, lang="en", since="2017-04-03").items():
+        for tweet in tweepy.Cursor(self.api.search, q="#RateKonnect", count=100, lang="en", since="2017-04-03").items():
+            if keyword in tweet:
                 db.session.add(Tweet(id=tweet.id, name=tweet.user.screen_name, date_posted=tweet.created_at, content=tweet.text, business_id=biz
                                      _id))
-                # csvWriter.writerow([tweet.user.screen_name, tweet.created_at, tweet.text, tweet.id])
        
