@@ -1,5 +1,7 @@
 # Konnect
 
+## [PRESENTATION DECK](https://docs.google.com/presentation/d/1D0VVENqTKYcPaQi2_ys1dEvWMyaOFoqEfjRXDFIodmA/edit#slide=id.g702fa1c2f6_0_241)
+
 ### Problem
 
 A lot of small local businesses often lack the visibility and support that they need from customers in order to grow and remain relevant in their community. Advertisements are expensive; small businesses hardly receive the coverage they need on sites such as Yelp. This project aims to serve as a microinfluencer for multiple businesses that register with us. The main problem we found is that people are often steered away from patronizing these local businesses because they can not ascertain the quality of their services
